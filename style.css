@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body {
+  background-color: #4f4f4f;
+}
+h1{
+  text-align: center;
+  font-size: 65px;
+  font-family: lato;
+  color: #222;
+  font-weight: 900;
+}
+#countdown {
+  color: #222;
+  text-shadow: 0 0 5px 5px #000 inset;
+  max-width: 960px;
+  margin: 30px auto;
+  text-align: center;
+  -webkit-transition: ease .3s;
+          transition: ease .3s;
+  vertical-align: top;
+  font-size: 6rem;
+  font-family: lato;
+  font-weight: 900;
+}
+#countdown div {
+  display: inline-block;
+  vertical-align: top;
+}
+#countdown div::after {
+  display: block;
+  font-size: 35px;
+  margin-top: 10px;
+  color: #222;
+  font-weight: 400;
+}
+#countdown div.days::after {
+  content: "Дней";
+}
+#countdown div.hours::after {
+  content: "Часов";
+}
+#countdown div.min::after {
+  content: "Минут";
+}
+#countdown div.sec::after {
+  content: "Секунд";
+}
